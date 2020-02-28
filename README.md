@@ -30,13 +30,20 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+
+
 2. What is the difference between a function and a method?
-
+    Map returns a new array, and needs a return keyword, while forEach does not require either.
 3. What is closure?
-
+    Closure is a concept that allows us to access outer scope data from within the inner scope. For example, you could declare a variable at the start of your function
+    called 'color' and assign it to 'red'. Then you could use that 'color' variable later on in a nested function.
 4. Describe the four rules of the 'this' keyword.
-
+    1) .this will default to the window/console if it is not pointing to anything. You can change this by using strict mode which will cause it to default to 'undefined'.
+    2) Implicit binding - One of the most commonly used forms of .this, whatever object is to the left of the dot of a function call, that is translated to '.this'.
+    3) New binding - Whenever using a constructor function, 'this' refers to a specific instance of the object returned by the constructor.
+    4) Explicit binding - The act of using .call and .apply to specifically pass an argument into a function.
 5. Why do we need super() in an extended class?
+    So we can tell the parent constructor to be concerned with the child object's attributes.
 
 ## Project Set up
 
